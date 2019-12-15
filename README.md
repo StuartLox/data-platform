@@ -7,9 +7,9 @@ IaC to spin up EKS, and Confluent Operator to run Kafka On Kubernetes
 ```bash
 cd utils
 
-# Deploy EKS on AWS 
+# Deploy EKS 
 ./deploy.sh
 
-# Extract operator and initialise kafka on K8s
+# Download operator and init kafka on K8s
 ./kafka_operator_init.sh
 ```
