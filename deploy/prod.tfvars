@@ -1,0 +1,5 @@
+cluster-name="personal-eks"
+server-name="worker_nodes"
+vpc_name="personal-vpc"
+key="key"
+account_id="224041885527"
