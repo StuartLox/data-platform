@@ -50,8 +50,8 @@ kafka:
       cpu: 200m
       memory: 1Gi
   loadBalancer:
-    enabled: true
-    domain: "devplatform.eks.interal"
+    enabled: false
+    domain: ""
   tls:
     enabled: false
     fullchain: |-

@@ -7,6 +7,6 @@ provider "aws" {
   version = "~> 2.8"
 }
 
-# provider "k8s" {
-#   kubeconfig = "${var.kube_config}"
-# }
+provider "k8s" {
+  kubeconfig = "${var.kube_config}"
+}
