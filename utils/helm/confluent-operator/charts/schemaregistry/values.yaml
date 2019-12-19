@@ -1,6 +1,6 @@
 ## If false, schemaregistry will not be installed
 ##
-enabled: false
+enabled: true
 ## Name of schemaregistry
 ##
 name: schemaregistry
@@ -23,13 +23,13 @@ resources:
   ## Reference: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   requests:
     cpu: 200m
-    memory: 4Gi
+    memory: 1Gi
   limits: {}
 
 ## JVM configuration 
 ## 
 jvmConfig:
-  heapSize: 4G
+  heapSize: 2G
 
 ## Endpoint Configuration
 ##
