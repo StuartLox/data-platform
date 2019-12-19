@@ -6,7 +6,7 @@ enabled: false
 name: schemaregistry
 ## Replica count
 ##
-replicas: 2
+replicas: 1
 ## Image information
 ##
 image:
