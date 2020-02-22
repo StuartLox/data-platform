@@ -20,18 +20,18 @@ resources:
   ## Reference: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   requests:
     cpu: 500m
-    memory: 4Gi
+    memory: 2Gi
   limits: {}
 
 ## Volume size
 ## Don't change the sequence
 volume:
-  data: 10Gi
-  txnlog: 10Gi
+  data: 4Gi
+  txnlog: 4Gi
 ## JVM configuration
 ##
 jvmConfig:
-  heapSize: 4G
+  heapSize: 2G
 ## Pod termination grace-period
 ##
 terminationGracePeriodSeconds: 180

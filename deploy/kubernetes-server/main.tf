@@ -23,8 +23,9 @@ resource "aws_security_group" "kubernetes-server-instance-sg" {
 }
 
 resource "aws_instance" "kubernetes-server" {
-  instance_type          = "${var.instance_type}"
-  ami                    = "${var.instance_ami}"
+  instance_type = "${var.instance_type}"
+  ami           = "${var.instance_ami}"
+
   # key_name               = "${var.instance_key}"
   subnet_id              = "${var.k8-subnet}"
   vpc_security_group_ids = ["${aws_security_group.kubernetes-server-instance-sg.id}"]

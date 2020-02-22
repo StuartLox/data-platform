@@ -20,12 +20,12 @@ resources:
   ## Reference: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   requests:
     cpu: "1"
-    memory: 4Gi
+    memory: 2Gi
   limits: {}
 ## Volume size
 ##
 volume:
-  data0: 10Gi
+  data0: 5Gi
 ## Options for turning Kafka features on/off
 ##
 options:
@@ -36,7 +36,7 @@ options:
 ## JVM configuration
 ##
 jvmConfig:
- heapSize: 4G
+ heapSize: 2G
 
 ## Pod termination grace-period
 ## Don't change this number as we run pre-hook that take cares of gracefully terminating the cluster
